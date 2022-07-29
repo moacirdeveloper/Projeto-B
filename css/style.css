@@ -1,1 +1,88 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing:  border-box;
+}
 
+/*MAIN*/
+.container{
+	width:  80%;
+	margin: 5px auto;
+	background-color:  #ccc;
+}
+/*HEADER*/
+.header{
+	width:  100%;
+	line-height: 80px;
+	background-color:  yellow;
+	text-align: center;
+}
+/*MENU*/
+.menu{
+	display:  flex;
+	line-height:  30px;
+	background-color:  black;
+}
+.menu div{
+	flex: 50%;
+	color:  white;
+	text-align:  center;
+	font-size: 14px;
+}
+.menu div:hover{
+	background-color:  red;
+}
+.divHome{
+	display: flex;
+	flex-direction:  column;
+	position: relative;
+}
+.mnuHome{
+	display:  none;
+	flex-direction:  column;
+	width:  100%;
+	position:  absolute;
+	z-index:  1;
+	top: 30px;
+	left:  10px;
+}
+.divHome:hover .mnuHome{
+	display: flex;
+	background-color:  black;
+} 
+
+/*CONTEUDO*/
+.conteudo{
+
+	display: flex;
+	justify-content: center;
+	flex-wrap:  wrap;
+	background-color:  #ddd;
+	width:  60%;
+	padding: 10px;
+	margin:  0px auto;
+	align-content:  center;
+	gap: 10px;
+
+}
+.conteudo div{
+	width:  200px;
+	padding:  10px;
+	border:  1px solid black;
+	border-color:  #eee;
+	border-radius:  5px;
+}
+/*FOOTER*/
+.footer{
+	display:  flex;
+	background-color:  #83988e;
+	justify-content: space-between;
+	line-height: 40px;
+}
+.footer p{
+	margin:  0px 10px;
+	border-radius: 3px;
+	color: black;
+	font-weight:  bold;
+}
